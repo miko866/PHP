@@ -1,0 +1,15 @@
+footer {
+    padding-bottom: 3em;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+        font-weight: bold;
+        padding: 0 .5em;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            color: $color-hover;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: inline-block;
+    width: 11.250em;
+}
+
+input[type='text'] {
+    width: 97%;
+    padding: .250em;
+    border-radius: .313em;
+    border: 1px solid #ccc;
+}
+
+input[type='number'] {
+    width: 3.125em;
+    padding: .250em;
+    border-radius: .313em;
+    border: 1px solid #ccc;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header {
+    border-bottom: 3px #f4f4f4 solid;
+}
+
+footer {
+    border-top: 3px #f4f4f4 solid;
+    text-align: center;
+    margin-top: .313em;
+}
+
+main {
+    padding-bottom: 1.250em;
+}
+
+a.start,
+input[type='submit'] {
+    display: inline-block;
+    color: #666;
+    background: #f4f4f4;
+    border: 1px dotted #ccc;
+    padding: .375em .813em;
+    transition: .3s all ease-in-out;
+}
+
+a.start:hover,
+input[type='submit']:hover {
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+a.add {
+    border: none;
+    background: none;
+}
+
+.current {
+    padding: 10px;
+    background: #f4f4f4;
+    border: #ccc dotted 1px;
+    margin: 1.250em 0 .625em 0;
+}

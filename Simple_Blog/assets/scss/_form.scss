@@ -1,0 +1,75 @@
+
+form {
+
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    
+    input:focus,
+    textarea:focus {
+        outline: 2px solid rgba(234, 46, 73, 0.35);
+    }
+
+    input,
+    textarea {
+        padding: 1.6em;
+        background: $color-base-2;
+        border: none;
+        border-radius: 4px;
+        font: inherit;
+    }
+
+    textarea {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .form-submit {
+        input {
+            color: $color-base-2;
+            cursor: pointer;
+            background: $color-main;
+            padding: .813em 1.250em;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                background: $color-hover;
+            }
+        }
+
+        a {
+            padding-left: 2em;
+            color: $color-main;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 37.500em) {
+        width: 80%;
+    }
+
+    @media only screen and (max-width: 27.200em) {
+        
+        margin-bottom: 2em;
+
+        .form-submit {
+
+            input {
+                width: 100%;
+            }
+
+            a {
+                text-align: center;
+                display: block;
+                padding-left: 0;
+                padding-top: 1em;
+            }
+        }
+
+
+    }
+}

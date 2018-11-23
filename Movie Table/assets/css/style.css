@@ -1,0 +1,35 @@
+@import 'http://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+body {
+    color: #444;
+    font-family: Montserrat;
+    background: #eee;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+h1 { margin: 0 0 20px; }
+table {
+    color: #fff;
+    background: #34495E;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+thead th {
+    text-transform: capitalize;
+}
+th, td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #46627f;
+}
+th,
+tfoot td {
+    color: #dd5;
+    text-align: left;
+    font-weight: bold;
+}
+tfoot td {
+    text-align: right;
+    border: none;
+}
+.odd {
+    background-color: #40576E;
+}

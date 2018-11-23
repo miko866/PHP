@@ -1,0 +1,107 @@
+.flex-direction {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    ul {
+        display: block;
+        width: 40%;
+
+        li {
+            border: 1px solid $color-white;
+            color: $color-white;
+            padding: 1em;
+            font-weight: bold;
+            display: flex;
+
+            p {
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                hyphens: auto;
+                width: 80%;
+                line-height: 1.3em;
+            }
+        }
+
+        .controls {
+            flex-grow: 1;
+            text-align: end;
+            flex-basis: auto;
+
+        }
+
+        .edit-link {
+            margin-right: 1.5em;
+            color: $color-main;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: $color-hover;
+                text-shadow: 1px 0px 1px $color-black;
+            }
+        }
+
+        .delete-link {
+            &:hover {
+                color: $color-opacity;
+            }
+        }
+    }
+
+    form {
+        display: block;
+        width: 40%;
+
+        textarea {
+            overflow: auto;
+            width: 100%;
+            border: none;
+            cursor: text;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        input {
+            border: none;
+            padding: .4em 1em;
+            background: $color-main;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background: $color-hover;
+            }
+        }
+    }
+
+        @media all and (max-width: 60.000em) {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            ul {
+                width: 60%;
+            }
+
+            form {
+                width: 60%;
+                padding-bottom: 2.2em;
+            }
+        }
+
+        @media all and (max-width: 40.000em) {
+
+            ul {
+                width: 100%;
+
+                .edit-link {
+                    margin-right: 0.5em;
+                }
+
+            }
+
+            form {
+                width: 100%;
+            }
+        }
+}

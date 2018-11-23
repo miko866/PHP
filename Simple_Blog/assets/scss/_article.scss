@@ -1,0 +1,23 @@
+.article-list {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 2em;
+
+    article {
+        margin-bottom: 2.2em;
+    }
+
+    time {
+        color: $color-main;
+    }
+
+    p {
+        margin-top: 0.5em;
+        text-align: justify;
+        line-height: 1.4em;
+    }
+
+    @media only screen and (max-width: 31.250em) {
+            width: 90%;
+    }
+}

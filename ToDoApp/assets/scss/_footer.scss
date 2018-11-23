@@ -1,0 +1,14 @@
+
+footer {
+    padding-bottom: 1em;
+    padding-top: 3em;
+    text-align: center;
+
+    a {
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            color: $color-hover;
+        }
+    }
+}

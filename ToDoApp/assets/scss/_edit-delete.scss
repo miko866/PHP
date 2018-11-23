@@ -1,0 +1,13 @@
+
+#edit-form,
+#delete-form {
+
+    span {
+        margin-left: 2em;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            color: $color-opacity;
+        }
+    }
+}
